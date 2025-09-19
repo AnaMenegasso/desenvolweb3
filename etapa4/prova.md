@@ -30,8 +30,8 @@ camadas da arquitetura da Etapa 3 (Routes -> Controller -> Service -> Repository
 
 R: server: configura a rota dos rotes
  Routes: faz as rotas das instancias que sao passadas por meio do arquivo.controller.js
-arquivo.controller.js: 
-arquivo.service.js:
+arquivo.controller.js: passa as instancias pro routes 
+arquivo.service.js: recebe as informações do arquiv.repository.js
 arquivo.repository.js:Contem toda a logica de negocio necessarios para deletar o contato
 
 8. (0.5 ponto) O que caracteriza o anti-padrão "Fat Model" (Modelo Gordo), visto na Etapa 1?
