@@ -16,9 +16,15 @@ export class ContatoService {
     return this.contatoRepository.findById(id);
   }
 
+  getContatoByTelefone(telefone) {
+    return this.contatoRepository.findByTelefone(telefone);
+
+  }
+
   createContato(contatoData) {
-    // No futuro, regras de negócio como "verificar email duplicado"
-    // viveriam aqui, ANTES de chamar o repositório.
+    if (!contatoData.email || contatoData.email ){
+      return(this.createContato)
+    }
     return this.contatoRepository.create(contatoData);
   }
 

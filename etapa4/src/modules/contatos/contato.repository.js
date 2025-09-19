@@ -32,4 +32,8 @@ export class ContatoRepository {
     this.#contatos.splice(index, 1);
     return true;
   }
+
+  findByTelefone(telefone){
+    
+  }
 }

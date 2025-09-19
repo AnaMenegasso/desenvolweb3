@@ -25,6 +25,14 @@ export class ContatoController {
     return reply.send(contato);
   }
 
+  async getContatoByTelefone(request, reply){
+    const {telefone} = request.query.telefone
+    
+    if(!telefone){
+      return reply.code(404).send({ message: 'Contato não encontrado' });
+    }
+  }
+
   async createContato(request, reply) {
     const novoContato = this.contatoService.createContato(request.body);
     return reply.code(201).send(novoContato);

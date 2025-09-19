@@ -19,6 +19,8 @@ GET {{url}}/contatos
 # Buscar contato específico
 GET http://localhost:3000/contatos/1
 
+GET http://localhost:3000/api/contatos/search?telefone=44991617928)
+
 # Atualizar contato
 PUT http://localhost:3000/contatos/1
 Content-Type: application/json
