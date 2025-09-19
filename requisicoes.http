@@ -1,33 +1,37 @@
-# @url=http://localhost:3000
+@url=http://localhost:3300/api
 
 
-# # Criar contato
-# POST http://localhost:3000/contatos
-# Content-Type: application/json
+# Criar contato
+POST {{url}}/contatos
+Content-Type: application/json
 
-# {
-#   "nome": "Ana Julia",
-#   "email": "menegasso@gmail.com",
-#   "telefone": "44991617928"
-# }
+{
+  "nome": "Ana Julia",
+  "email": "menegasso@gmail.com",
+  "telefone": "44991617928"
+}
 
-# # Listar contatos
-# GET http://localhost:3000/contatos
+###
 
-# # Buscar contato específico
-# GET http://localhost:3000/contatos/1
+# Listar contatos
+GET {{url}}/contatos
 
-# # Atualizar contato
-# PUT http://localhost:3000/contatos/1
-# Content-Type: application/json
+# Buscar contato específico
+GET http://localhost:3000/contatos/1
 
-# {
-#   "telefone": "44991617928"
-# }
+# Atualizar contato
+PUT http://localhost:3000/contatos/1
+Content-Type: application/json
 
-# # Deletar contato
-# DELETE http://localhost:3000/contatos/1
-### Criar um novo contato
+{
+  "telefone": "44991617928"
+}
+
+# Deletar contato
+DELETE http://localhost:3000/contatos/1
+
+
+## Criar um novo contato
 POST http://localhost:3200/api/contatos
 Content-Type: application/json
 

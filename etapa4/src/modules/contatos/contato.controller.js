@@ -13,7 +13,10 @@ export class ContatoController {
   }
 
   async getContatoById(request, reply) {
+    
     const { id } = request.params;
+    // const category = request.query.category;
+
     const contato = this.contatoService.getContatoById(id);
 
     if (!contato) {
